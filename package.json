@@ -1,0 +1,26 @@
+{
+  "name": "pi_html_css_etal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sorrego98/PI_HTML_CSS_etal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sorrego98/PI_HTML_CSS_etal/issues"
+  },
+  "homepage": "https://github.com/sorrego98/PI_HTML_CSS_etal#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
