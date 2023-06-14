@@ -1,0 +1,39 @@
+header {
+    background-color: #EAC926;
+    font-family: 'Roboto';
+}
+body{
+    background-color: #ebebeb;
+    font-family: 'Roboto';
+}
+footer{
+    background-color: #ebebeb;
+    font-family: 'Roboto';
+}
+
+p {font-size: 12px;}
+h3 {font-size: 24px;}
+#precio {font-size: 18px;}
+#descuento {font-size: 16px;}
+.descripcion {font-size: 16px;}
+ul#body li {
+    font-size: 12px;
+    text-align: justify;
+}
+.centrado {text-align: center;}
+#botonback {
+    background-color: #ebebeb;
+    border: black 2px solid;
+}
+
+.bback{
+    background-color: #1259c3;
+    text-align: center;
+    font-size: 25px;
+}
+.bcolor {color: #ebebeb;}
+.iconmod{
+    color: #1259c3;
+    font-size: 2em;
+    line-height: 10px;
+}
