@@ -1,3 +1,6 @@
+*{
+    box-sizing: content-box;
+}
 header {
     background-color: #EAC926;
     font-family: 'Roboto';
@@ -5,6 +8,9 @@ header {
 body{
     background-color: #ebebeb;
     font-family: 'Roboto';
+}
+main{
+    width: 90vw;
 }
 footer{
     background-color: #ebebeb;
@@ -14,8 +20,14 @@ footer{
 p {font-size: 12px;}
 h3 {font-size: 24px;}
 #precio {font-size: 18px;}
-#descuento {font-size: 16px;}
-.descripcion {font-size: 16px;}
+#descuento {
+    font-size: 16px;
+    color: #39b54a;
+}
+.descripcion {
+    font-size: 16px;
+    display: none;
+}
 ul#body li {
     font-size: 12px;
     text-align: justify;
@@ -23,17 +35,45 @@ ul#body li {
 .centrado {text-align: center;}
 #botonback {
     background-color: #ebebeb;
-    border: black 2px solid;
+    border: black 1px solid;
 }
 
 .bback{
     background-color: #1259c3;
     text-align: center;
     font-size: 25px;
+    display: none;
 }
 .bcolor {color: #ebebeb;}
 .iconmod{
     color: #1259c3;
     font-size: 2em;
-    line-height: 10px;
+    margin-bottom: 10px;
+}
+.delivery{
+    color: #39b54a;
+    font-size: 2em;
+}
+
+nav ul{ display: none;}
+section article div{
+    margin-bottom: 10px;
+    border-top: solid 1px #ebebeb;
+    background-color: white;
+    padding: 15px;
+}
+
+@media (min-width: 361px){
+    nav ul{ display: block;}
+    .bback{
+        display: block;}
+    body{
+        .descripcion{
+            display: block;
+        };
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width: 769px){
 }
