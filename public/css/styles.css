@@ -11,13 +11,19 @@ body,
 footer{
     background-color: #ebebeb;
     font-family: 'Roboto';
+    margin: 1px;
+    padding: 1px;
 }
 main{
     width: 90vw;
 }
 
 p {font-size: 12px;}
-h3 {font-size: 24px;}
+h3 {
+    font-size: 24px;
+    margin: 5px;
+    padding: 5px;
+}
 .precio {font-size: 18px;}
 .descuento {
     font-size: 16px;
@@ -47,6 +53,12 @@ ul.body li {
     margin: auto;
 }
 .bcolor {color: #ebebeb;}
+.logo {
+    width: 50%;
+}
+.bar-search {
+    width: 50%;
+}
 .iconmod{
     color: #1259c3;
     font-size: 2em;
@@ -55,14 +67,16 @@ ul.body li {
 .delivery{
     color: #39b54a;
     font-size: 2em;
-    padding: 10px;
+    display: block;
+    padding: 5px;
     width: 30px;
     height: 30px;
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
     position: absolute;
-    right: 15vw;
+    right: 20px;
+    top: -15px;
 }
 
 nav ul{ 
@@ -75,6 +89,7 @@ section div article div{
     border-top: solid 1px #ebebeb;
     background-color: white;
     padding: 15px;
+    position: relative;
 }
 .price-discount{
     display: flex;
@@ -92,6 +107,27 @@ section div article div{
     color: black;
 }
 
+.header-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.navbar ul li{
+    margin: 0 5px;
+}
+
 @media (min-width: 361px){
     nav ul{ 
         display: block;}
@@ -105,7 +141,32 @@ section div article div{
             box-shadow: 0px 0px 10px rgb(100, 100, 100);
         }
     }
+    .header-flex1{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .to-sell{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .to-sell article{
+        margin: auto;
+        width: 42%;
+        box-sizing: border-box;
+    }
 }
 
 @media (min-width: 769px){
+    .navbar, 
+    .header-flex1{
+        max-width: 1000px;
+        margin: auto;
+    }
+    .to-sell article{
+        width: 24%;
+    }
 }
