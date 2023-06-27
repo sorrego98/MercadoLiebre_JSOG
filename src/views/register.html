@@ -3,37 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XXX</title>
+    <title>Registro Usuario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <p>REGISTRO DE USUARIO: MODIFICAR ESTO LUEGO</p>
+    <h1 class="centrado">Registro Usuario</h1>
     <main>
-        <form action="">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="ej: Marciano"><br>
-            <label for="usuario">Usuario</label>
-            <input type="text" name="usuario" id="usuario" placeholder="ej: M.Garcia"><br>
-            <label for="nacimiento">Fecha de nacimiento</label>
-            <input type="date" name="nacimiento" id="nacimiento"><br>
-            <label for="direccion">Dirección</label>
-            <input type="text" name="direccion" id="direccion" placeholder="ej: Cra 55 Cll 90 A-Sur 10 APTO 123"><br>
-            <label for="perfil">¿Qué desea realizar?</label><br>
-            <input type="radio" name="perfil" id="perfil" value="comprar"> Comprar
-            <input type="radio" name="perfil" id="perfil" value="vender"> Vender
-            <br>
-            <label for="categorias">Categorías de interés</label><br>
-            <input type="checkbox" name="categorias" id="categorias" value="electro"> Electro <br>
-            <input type="checkbox" name="categorias" id="categorias" value="moda"> Moda <br>
-            <input type="checkbox" name="categorias" id="categorias" value="hogar"> Hogar <br>
-            <input type="checkbox" name="categorias" id="categorias" value="jugueteria"> Juguetería <br>
-            <input type="checkbox" name="categorias" id="categorias" value="vidasana"> Vida Sana <br>
-            <label for="fotoperfil">Agrega foto de perfil</label><br>
-            <input type="file" name="fotoperfil" accept="image/*" id="fotoperfil"><br>
-            <label for="password">Ingresa tu contraseña</label><br>
-            <input type="password" name="password" id="password" placeholder="ej: yuiVBN*"> <br>
-            <label for="conpassword">Confirma tu contraseña</label><br>
-            <input type="conpassword" name="conpassword" id="conpassword" placeholder="ej: yuiVBN*"><br>
-            <input type="reset" value="Eliminar datos">
+        <form action="/home" method="get">
+            <div class="text-form">
+                <label for="nombre" class="label-form">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="ej: Marciano" required minlength="3" maxlength="40">
+            </div>
+            <div class="text-form">
+                <label for="usuario" class="label-form">Usuario</label>
+                <input type="text" name="usuario" id="usuario" placeholder="ej: M.Garcia" required min="4" maxlength="40">
+            </div>
+            <div class="text-form">
+                <label for="nacimiento" class="label-form">Fecha de nacimiento</label>
+                <input type="date" name="nacimiento" id="nacimiento" required>
+            </div>
+            <div class="text-form">
+                <label for="direccion" class="label-form">Dirección</label>
+                <input type="text" name="direccion" id="direccion" placeholder="ej: Cra 55 Cll 90 A-Sur 10 APTO 123" required minlength="10" maxlength="50">
+            </div>
+            <div class="text-form">
+                <label for="perfil" class="label-form">¿Qué desea realizar?</label>
+                <input type="radio" name="perfil" id="perfil" value="comprar"> Comprar
+                <input type="radio" name="perfil" id="perfil" value="vender"> Vender
+            </div>
+            <div class="text-form">
+                <label for="categorias" class="label-form">Categorías de interés</label>
+                <input type="checkbox" name="categorias" id="categorias" value="electro"> Electro 
+                <input type="checkbox" name="categorias" id="categorias" value="moda"> Moda 
+                <input type="checkbox" name="categorias" id="categorias" value="hogar"> Hogar 
+                <input type="checkbox" name="categorias" id="categorias" value="jugueteria"> Juguetería 
+                <input type="checkbox" name="categorias" id="categorias" value="vidasana"> Vida Sana 
+            </div>
+            <div class="text-form">
+                <label for="fotoperfil" class="label-form">Agrega foto de perfil</label>
+                <input type="file" name="fotoperfil" accept="image/*" id="fotoperfil">
+            </div>
+            <div class="text-form">
+                <label for="password" class="label-form">Ingresa tu contraseña</label>
+                <input type="password" name="password" id="password" placeholder="ej: yuiVBN*" required>
+            </div>
+            <div class="text-form">
+                <label for="conpassword" class="label-form">Confirma tu contraseña</label>
+                <input type="password" name="conpassword" id="conpassword" placeholder="ej: yuiVBN*" required>
+            </div>
+            <div class="bottom-input">
+                <input type="reset" value="Eliminar datos" class="bottom-form">
+                <input type="submit" value="Enviar" class="bottom-form">
+            </div> 
         </form>
     </main>
 </body>

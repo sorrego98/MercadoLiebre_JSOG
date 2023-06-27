@@ -128,6 +128,41 @@ section div article div{
     margin: 0 5px;
 }
 
+.text-form{
+    margin: auto;
+    border: 1px;
+    padding: 8px;
+    width: 95%;
+}
+
+.bottom-form{
+    background-color: #1259c3;
+    border: solid 1px black;
+    color: #EAC926;
+    border-radius: 5px;
+}
+
+main form div.text-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.bottom-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.label-form{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 5px;
+    padding: auto;
+}
+
 @media (min-width: 361px){
     nav ul{ 
         display: block;}
