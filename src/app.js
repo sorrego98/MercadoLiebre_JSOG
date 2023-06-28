@@ -9,7 +9,7 @@ const registerPath = path.resolve(__dirname, `./views/register.html`)
 const loginPath = path.resolve(__dirname, `./views/login.html`)
 app.use(express.static(publicPath));
 
-app.get(`/home`, (req, res) => res.sendFile(homePath));
+app.get(`/`, (req, res) => res.sendFile(homePath));
 app.get(`/register`, (req, res) => res.sendFile(registerPath));
 app.get(`/login`, (req, res) => res.sendFile(loginPath));
 

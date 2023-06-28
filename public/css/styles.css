@@ -33,6 +33,19 @@ h3 {
     font-size: 16px;
     display: none;
 }
+.descripcion-1 {
+    font-size: 16px;
+}
+
+.shadow:hover .descripcion{
+    display: block;
+    
+}
+
+.to-sell:hover article .shadow{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
 ul.body li {
     font-size: 12px;
     text-align: justify;
@@ -64,6 +77,15 @@ ul.body li {
     font-size: 2em;
     margin-bottom: 10px;
 }
+
+.iconmod:hover{
+    color: #EAC926;
+    background-color: #1259c3;
+    padding: 3px;
+    border: black solid 2px;
+    border-radius: 5px;
+}
+
 .delivery{
     color: #39b54a;
     font-size: 2em;
@@ -77,6 +99,11 @@ ul.body li {
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: all 750ms;    
+}
+
+.delivery:hover{
+    transform: rotate(-0.25turn);
 }
 
 nav ul{ 
@@ -135,11 +162,14 @@ section div article div{
     width: 95%;
 }
 
-.bottom-form{
+.bottom-form,.bottom-form-1{
     background-color: #1259c3;
     border: solid 1px black;
     color: #EAC926;
     border-radius: 5px;
+}
+.bottom-form-1:hover{
+    background-color: #0022AA;
 }
 
 main form div.text-form {
@@ -149,7 +179,7 @@ main form div.text-form {
     justify-content: flex-start;
 }
 
-.bottom-input{
+.bottom-input,.bottom-input-1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -169,11 +199,8 @@ main form div.text-form {
     .bback{
         display: none;}
     body{
-        .descripcion{
-            display: block;
-        };
         .shadow{
-            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+            border-radius: 1px;
         }
     }
     .header-flex1{
@@ -203,5 +230,22 @@ main form div.text-form {
     }
     .to-sell article{
         width: 24%;
+    }
+
+    .descripcion-1{
+        width: 50%;
+        margin: auto;
+    }
+
+    footer section{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    footer p{
+        font-size: 18px;
+        margin: 10px;
+        padding: 10px;
     }
 }
