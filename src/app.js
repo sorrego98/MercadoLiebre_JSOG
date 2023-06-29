@@ -13,5 +13,4 @@ app.get(`/`, (req, res) => res.sendFile(homePath));
 app.get(`/register`, (req, res) => res.sendFile(registerPath));
 app.get(`/login`, (req, res) => res.sendFile(loginPath));
 
-
 app.listen(port, () => console.log(`Server Running in ${port}`));
