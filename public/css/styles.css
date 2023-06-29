@@ -15,7 +15,8 @@ footer{
     padding: 1px;
 }
 main{
-    width: 90vw;
+    width: 90%;
+    margin: 0 auto;
 }
 
 p {font-size: 12px;}
