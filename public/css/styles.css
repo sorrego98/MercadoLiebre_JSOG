@@ -69,6 +69,7 @@ ul.body li {
 .bcolor {color: #ebebeb;}
 .logo {
     width: 50%;
+    margin: 15px 0;
 }
 .bar-search {
     width: 50%;
@@ -142,6 +143,10 @@ section div article div{
     align-items: center;
 }
 
+.navhide{
+    display: none;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -153,7 +158,7 @@ section div article div{
 }
 
 .navbar ul li{
-    margin: 0 5px;
+    margin: 0px 5px 10px 5px;
 }
 
 .text-form{
@@ -195,6 +200,10 @@ main form div.text-form {
 }
 
 @media (min-width: 361px){
+    .navhide{
+        display: block;
+        margin-bottom: 5px;
+    }
     nav ul{ 
         display: block;}
     .bback{
